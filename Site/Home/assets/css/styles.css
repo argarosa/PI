@@ -1,0 +1,499 @@
+body {
+  padding-top: 44px;
+  background-color: #f5f5f7;
+}
+/* cell */
+:root {
+--primary-color: #f94a3d;
+--yellow-color: #ffcf03;
+--black-color: #212244;
+--default-color: #69697b;
+--deep-yellow: #ff9401;
+--yellow-color-1: #ffe507;
+--red-color-1: #e83b2e;
+--red-color-2: #ee3e32;
+--light-red-color: #fdecec;
+--grey-color: #eaeaea;
+--grey-color-1: #f8f8f8;
+--white-color: #fff;
+--box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.section {
+padding: 5rem 0 5rem;
+overflow: hidden;
+}
+.container {
+padding: 0 0rem;
+margin: auto;
+max-height: 500px;
+}
+.section img{
+  max-width: 40%;
+  height: auto;
+}
+
+@media (min-width: 1500px) {
+}
+.d-flex {
+display: flex;
+align-items: center;
+}
+.app {
+padding: 5rem 0 5rem;
+}
+
+.app .row {
+background: rgb(60,60,60);
+background: radial-gradient(circle, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+border-radius: 2rem;
+position: relative;
+overflow: hidden;
+}
+.app .row .col:first-child {
+margin-left: 5rem;
+}
+.app .row .col:first-child .circle {
+border-radius: 50%;
+height: 57rem;
+width: 57rem;
+position: relative;
+}
+.app .row .col:first-child .circle .inner-circle {
+border-radius: 50%;
+height: 43rem;
+width: 43rem;
+}
+.app .row .col:first-child .circle img {
+position: absolute;
+top: 45%;
+left: 20%;
+transform: translate(-50%, -50%);
+width: 30rem;
+}
+.app .row .col:last-child {
+position: absolute;
+top: 50%;
+right: 10rem;
+transform: translateY(-50%);
+width: 40%;
+}
+.app .row .col:last-child h2 {
+color: var(--white-color);
+font-size: 3.5rem;
+margin-bottom: 1.5rem;
+}
+.app .row .col:last-child p {
+color: var(--white-color);
+margin-bottom: 2rem;
+}
+.app .row .col:last-child .d-flex img:first-child {
+margin-right: 2rem;
+}
+@media (max-width: 1300px) {
+.app .row .col:first-child {
+  margin-left: 0;
+}
+.app .row .col:last-child h2 {
+  font-size: 3.5rem;
+}
+}
+@media (max-width: 996px) {
+.app {
+
+  padding: 0rem 0 0rem;
+  height: 25rem;
+}
+.app .row {
+  height: 100%;
+}
+.app .row .col:first-child {
+  display: none;
+}
+.app .row .col:last-child {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.app .row .col:last-child h2 {
+  font-size: 3rem;
+}
+.app .row .col:last-child img {
+  height: 4rem;
+}
+}
+@media (max-width: 567px) {
+.app .row .col:last-child h2 {
+  font-size: 2.5rem;
+}
+}
+
+/*  */
+.product {
+padding-top: 40px;
+padding-right: 20px;
+padding-left: 20px;
+height: 550px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+.product {
+  padding-right: 0;
+  padding-left: 0;
+}
+}
+
+.product h1 {
+font-size: 32px;
+font-weight: bold;
+}
+
+@media (min-width: 768px) {
+.product h1 {
+  font-size: 56px;
+}
+}
+
+.product h2 {
+font-size: 21px;
+font-weight: 400;
+}
+
+@media (min-width: 768px) {
+.product h2 {
+  font-size: 27px;
+}
+}
+
+.product .links {
+font-size: 20px;
+margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+.product .links {
+  font-size: 21px;
+  margin-bottom: 80px;
+}
+}
+
+.product .links a {
+text-decoration: none;
+}
+
+.product .links a:hover {
+text-decoration: underline;
+}
+
+.fa.fa-angle-right {
+margin-left: 7px;
+}
+
+.fa.fa-play-circle {
+margin-left: 7px;
+}
+
+.product .links .learn-more {
+margin-right: 50px;
+}
+
+.product.links.small-link-margin {
+margin-bottom: 0;
+}
+
+.product.iphone-13-pro {
+background: url("../../assets/img/banner-branco.png") center / cover no-repeat, #fbfbfd;
+}
+
+@media (min-width: 768px) {
+.product.iphone-13-pro {
+  background: url("../../assets/img/banner-branco.png") center / cover no-repeat, #fbfbfd;
+}
+}
+
+.product.iphone-13 {
+background: url("../../assets/img/hero_iphone_13__f194u1rdooeq_small_2x.jpg") center / cover no-repeat, #34283c;
+padding-top: 250px;
+}
+
+@media (min-width: 768px) {
+.product.iphone-13 {
+  background: url("../../assets/img/hero_iphone_13__f194u1rdooeq_large_2x.jpg") center / cover no-repeat, #34283c;
+  padding-top: 40px;
+}
+}
+
+.product.iphone-13 h2 {
+color: #FDC1EA;
+}
+
+.product.apple-watch {
+background: url("../../assets/img/hero_watch__f05go333pz2i_small_2x.jpg") center / cover no-repeat, #f5f5f7;
+}
+
+.product.apple-watch span {
+font-size: 20px;
+color: #C45B1B;
+}
+
+.logo-img-large {
+width: 200px;
+margin-bottom: 7px;
+}
+
+.product.macbook-pro {
+background: #131218;
+}
+
+.product.dark {
+color: #fff;
+}
+
+.products-grid {
+padding-right: 0;
+}
+
+@media (min-width: 768px) {
+.products-grid {
+  padding-right: 10px;
+}
+}
+
+.product-small {
+height: 550px;
+padding-top: 40px;
+padding-left: 20px;
+padding-right: 20px;
+margin: 0 0 10px 0;
+text-align: center;
+}
+
+@media (min-width: 768px) {
+.product-small {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 0 10px 10px;
+}
+}
+
+.product-small h3 {
+font-size: 32px;
+font-weight: bold;
+}
+
+.product-small h4 {
+font-size: 19px;
+font-weight: 400;
+}
+
+.product-small h5 {
+font-size: 15px;
+font-weight: 400;
+color: gray;
+}
+
+.logo-img {
+width: 150px;
+margin-bottom: 7px;
+}
+
+.product-small .links {
+font-size: 17px;
+margin-bottom: 20px;
+}
+
+.product-small .links .learn-more {
+margin-right: 30px;
+}
+
+.product-small .links a {
+text-decoration: none;
+}
+
+.product-small .links a:hover {
+text-decoration: underline;
+}
+
+.product-small.dark {
+color: #fff;
+}
+
+.product-small.macbook-pro {
+background: url("../../assets/img/tile_macbookpro__cx0ur0qg9biq_small_2x.jpg") center / cover no-repeat;
+}
+
+.product-small.airpods {
+padding-top: 420px;
+background: url("../../assets/img/tile_airpods__fuv6vgn42y2q_small_2x.jpg") center / cover no-repeat;
+}
+
+/*  */
+.box-conatiner{  
+width: 100%;   
+display: flex;  
+justify-content: center;  
+align-items: center;  
+flex-flow: wrap;  
+margin: 5% 0 5%;
+}  
+.box{  
+margin: 10px;
+border-radius: 30px;
+text-align: center;
+width: 30%;   
+min-height: 400px;  
+}  
+.box img{
+  margin-top: 7%;
+width: 100px;
+}
+.box h1{
+  margin-top: 5%;
+}
+.box1{  
+background-color:#ffff;  
+border-top-left-radius: 2rem;  
+border-bottom-left-radius: 2rem;  
+}  
+.box2{  
+background-color: #ffff;  
+overflow: hidden;
+}  
+.box p{
+padding: 0px 15px;
+}
+.box2 img{
+width: 100px;
+}
+.box3{  
+background-color: #ffff;  
+border-top-right-radius: 2rem;  
+border-bottom-right-radius: 2rem;  
+}  
+.box3 img{
+width: 100px;
+}
+.content{   
+}   
+.btn{  
+padding: 15px 40px;  
+border: 0;  
+outline: none;    
+font-size: 15px;  
+cursor: pointer;   
+font-weight: 700;  
+}  
+@media (max-width: 800px) {
+.box{
+  width: 90%;
+}
+}
+
+
+footer{
+  background-color: #141414;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+.container-footer{
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+.row-footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul{
+  list-style: none;
+}
+.footer-col ul li{
+  margin: 10px 0;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #cecdcd;
+  padding-left: 10px;
+}
+.footer-col .medias-socias{
+  margin-top: 30px;
+}
+.footer-col .medias-socias a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+  font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+  color: #141414;
+  background-color: white;
+}
+.footer-col .form-sub input{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  background-color: #141414;
+}
+.footer-col .form-sub input::placeholder{
+  color: white;
+}
+.footer-col .form-sub button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px; 
+  font-size: 17px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #141414;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+@media (max-width:600px) {
+  .footer-col{
+      width: 100%;
+  }
+}
