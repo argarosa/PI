@@ -1,5 +1,5 @@
 <?php
-require "conexao/conn.php";
+require "conn.php";
 $login=$_POST['login'];
 $nome_cliente=$_POST['nome_cliente'];
 $falha='login ou nome_cliente incorretos';
@@ -9,12 +9,10 @@ $consulta->execute();
 if($consulta->rowcount()==1){
     session_start();
         $row=$consulta->fetch();
-        $id=$row['ID_FUN'];
-        $tipo=$row['TIPO'];
+        $id=$row['cod_cliente'];
         $_SESSION['entrar']=$id;
         header("location:../coisas_de_front/SiteTAFV2/admin.php?id=$id");
 }else{
     header("location:../../Home/index.html");
-}
 }
 ?>
