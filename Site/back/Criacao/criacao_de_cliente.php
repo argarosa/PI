@@ -10,11 +10,11 @@ $cod_seg=$_POST["codcs"];
 $usuario=$_POST["user"];
 if(isset($_POST['cadastrar'])){
     if(!preg_match("/^[A-Za-z]{3,20}$/",$nome)){#validação
-        header("location:../coisas_de_front/SiteTAFV2/cadastrofuncionarios.php?enom=$nom");//alterar para onde vai
+        header("location:../../Home/index.html");
     }elseif(!preg_match("/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/",$email)){#validação
-        header("location:../coisas_de_front/SiteTAFV2/cadastrofuncionarios.php?eemail=$eemail");//alterar para onde vai
+        header("location:../../Home/index.html");
     }elseif(!preg_match("/^[0-9]{5,5}[-][0-9]{3,3}$/",$cep)){#validação
-        header("location:../coisas_de_front/SiteTAFV2/cadastrofuncionarios.php?es=$es");//alterar
+        header("location:../../Home/index.html");
     //elseif(!preg_match("/^[A-Za-z]{3,20}$/",$nome)){#validação
        // header("location:../coisas_de_front/SiteTAFV2/cadastrofuncionarios.php?es=$es");//alterar
     }else{
