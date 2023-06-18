@@ -154,13 +154,14 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="login-wrap p-0">
                             <h3 class="mb-4 text-center">Entre Aqui!</h3>
-                            <form action="#" class="signin-form">
+                            <form action="../../back/Criacao/login.php" method='post' class="signin-form">
                                 <div class="form-group">
                                     <input
                                         type="text"
                                         class="form-control"
                                         placeholder="Usuario"
                                         required
+                                        name="nome_cliente"
                                     />
                                 </div>
                                 <div class="form-group">
@@ -169,6 +170,7 @@
                                         class="form-control"
                                         placeholder="Email"
                                         required
+                                        name="login"
                                     />
                                 </div>
                                 <div class="form-group">
@@ -188,6 +190,7 @@
                                     <button
                                         type="submit"
                                         class="form-control btn btn-primary submit px-3"
+                                        name="entrar"
                                     >
                                         Entrar
                                     </button>
