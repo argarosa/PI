@@ -1,7 +1,7 @@
 <?php
 include "conn.php";//alterar
 //inserção de dados no banco parte cadastro cliente
-$nome=$_POST["nome"];
+$nome=$_POST["name"];
 $cep=$_POST["cep"];
 $email=$_POST["email"];
 $cartao='SELECT * FROM cartao WHERE num_cartao==999999'
