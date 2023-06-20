@@ -11,7 +11,7 @@ if($consulta->rowcount()==1){
         $row=$consulta->fetch();
         $id=$row['cod_cliente'];
         $_SESSION['entrar']=$id;
-        header("location:../coisas_de_front/SiteTAFV2/admin.php?id=$id");
+        header("location:../../Login/LoginJS/js/purchase/compra.html");
 }else{
     header("location:../../Home/index.html");
 }
