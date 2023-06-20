@@ -26,7 +26,7 @@ if(isset($_POST['cadastrar'])){
     $enviar->bindValue(':pcartão'$cartao)
     $enviar->bindValue(':pnu','0');
     $enviar->execute();
-    header("location:../coisas_de_front/SiteTAFV2/cadastrofuncionarios.php?es=$es");//alterar
+    header("location:../../Login/LoginJS/js/purchase/compra.html");//alterar
     }
 }
 ?>
